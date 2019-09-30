@@ -112,7 +112,7 @@
   }
 
   $(win).on('load', function () {
-    sliderVideo();
+    //sliderVideo();
   });
 
 })(window, window.jQuery);
