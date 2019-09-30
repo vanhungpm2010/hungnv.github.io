@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, ">
+    <title>pagetemp</title>
+    <link rel="shortcut icon" type="image/x-icon" href="media/other/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/pagetemp.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/libs/slideswiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slide.css">
+    <link rel="stylesheet" href="/form/css/form.css">
+    <link rel="stylesheet" href="/form/css/form1.css">
+    <link rel="stylesheet" href="/form/css/form2.css">
+    <script src="js/pagetemp/svgInject.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- pixelcode paste here -->
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- Container -->
+        <main id="container" role="main">
+            <!-- Content -->
+            <div id="content">
+                <div class="page_temp">
+
+                    <!-- single video -->
+                    <div class="single-video-wrap video-wrap component">
+                        <button class="js_popup_register popup-button" target="form1-popup" style="
+                                width: 30vw;
+                                padding: 1vw 3vw;
+                                top:10vw;
+                                left:5vw;
+                                border-radius:0.5vw;
+                                background:seagreen;
+                                color:#F50057">
+                            Open Register popup
+                        </button>
+                        <img src="media/vid_single/vid_single1.jpg" id="single-preview" class="fullWidth" />
+                        <img src="media/img_act/sound_off.svg" class="video-sound" id="off" />
+                        <img src="media/img_act/sound_on.svg" class="video-sound" id="on" />
+                        <img src="media/img_act/play.svg" class="video-sound" id="play" />
+                        <div src="media/vid_single/vid_single1.mp4" type="video/mp4" id="video-injector">
+                            <video preload="none" playsinline loop muted class="fullWidth"
+                                poster="media/vid_single/vid_single1.jpg">
+                                <!-- <source src="media/vid_single/vid_single1.webm" type="video/webm"> -->
+                                <source src="media/vid_single/vid_single1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- end single video -->
+
+                    <!--  slide video -->
+                    <div class="slidevid component" id="slideVid1">
+                        <div class="slidetemp_wrap">
+                            <!-- Slide temp -->
+                            <div class="slidetemp swiper-container">
+                                <ul class="lst swiper-wrapper">
+                                    <li class="item swiper-slide">
+                                        <button class="js_popup_register popup-button" target="form2-popup" style="
+                                            width: 30vw;
+                                            padding: 1vw 3vw;
+                                            top:10vw;
+                                            left:5vw;
+                                            border-radius:0.5vw;
+                                            background:seagreen;
+                                            color:#fff">
+                                            Open Register popup
+                                        </button>
+                                        <div class="box">
+                                            <div class="box_svg">
+                                                <img src="media/slidevid_temp/overlay_box1.svg" onload="SVGInject(this)"
+                                                    class="fullWidth fullHeight" />
+                                            </div>
+                                            <div class="box_avatar box_video">
+                                                <div class="video-wrap">
+                                                    <img src="media/slidevid_temp/img_avatar1.jpg" alt="" id="preview"
+                                                        class="fullWidth">
+                                                    <img src="media/img_act/sound_off.svg" class="video-sound"
+                                                        id="off" />
+                                                    <img src="media/img_act/sound_on.svg" class="video-sound" id="on" />
+                                                    <img src="media/img_act/play.svg" class="video-sound" id="play" />
+                                                    <div type="video/mp4" id="video-injector">
+                                                        <video playsinline loop muted preload="none" class="fullWidth">
+                                                            <source src="media/slidevid_temp/vid_box1.webm"
+                                                                type="video/webm">
+                                                            <!-- <source src="media/slidevid_temp/vid_box1.mp4"
+                                                                type="video/mp4"> -->
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <div class="box">
+                                            <button class="js_popup_register popup-button" target="form2-popup" style="
+                                                width: 30vw;
+                                                padding: 1vw 3vw;
+                                                top:10vw;
+                                                left:5vw;
+                                                border-radius:0.5vw;
+                                                background:seagreen;
+                                                color:#fff">
+                                                Open Register popup
+                                            </button>
+                                            <div class="box_svg">
+                                                <img src="media/slidevid_temp/overlay_box2.svg" onload="SVGInject(this)"
+                                                    class="fullWidth fullHeight" />
+                                            </div>
+                                            <div class="box_avatar box_video">
+                                                <div class="video-wrap">
+                                                    <img src="media/slidevid_temp/img_avatar2.jpg" alt="" id="preview"
+                                                        class="fullWidth">
+                                                    <img src="media/img_act/sound_off.svg" class="video-sound"
+                                                        id="off" />
+                                                    <img src="media/img_act/sound_on.svg" class="video-sound" id="on" />
+                                                    <img src="media/img_act/play.svg" class="video-sound" id="play" />
+                                                    <div type="video/mp4" id="video-injector">
+                                                        <video playsinline loop muted preload="none" class="fullWidth">
+                                                            <source src="media/slidevid_temp/vid_box2.webm"
+                                                                type="video/webm">
+                                                            <!-- <source src="media/slidevid_temp/vid_box2.mp4"
+                                                                type="video/mp4"> -->
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <div class="box">
+                                            <button class="js_popup_register popup-button" target="form2-popup" style="
+                                                width: 30vw;
+                                                padding: 1vw 3vw;
+                                                top:10vw;
+                                                left:5vw;
+                                                border-radius:0.5vw;
+                                                background:seagreen;
+                                                color:#fff">
+                                                Open Register popup
+                                            </button>
+                                            <div class="box_svg">
+                                                <img src="media/slidevid_temp/overlay_box3.svg" onload="SVGInject(this)"
+                                                    class="fullWidth fullHeight" />
+                                            </div>
+                                            <div class="box_avatar box_video">
+                                                <div class="video-wrap">
+                                                    <img src="media/slidevid_temp/img_avatar3.jpg" alt="" id="preview"
+                                                        class="fullWidth">
+                                                    <img src="media/img_act/sound_off.svg" class="video-sound"
+                                                        id="off" />
+                                                    <img src="media/img_act/sound_on.svg" class="video-sound" id="on" />
+                                                    <img src="media/img_act/play.svg" class="video-sound" id="play" />
+                                                    <div type="video/mp4" id="video-injector">
+                                                        <video playsinline loop muted preload="none" class="fullWidth">
+                                                            <source src="media/slidevid_temp/vid_box3.webm"
+                                                                type="video/webm">
+                                                            <!-- <source src="media/slidevid_temp/vid_box3.mp4"
+                                                                type="video/mp4"> -->
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <div class="box">
+                                            <button class="js_popup_register popup-button" target="form2-popup" style="
+                                                width: 30vw;
+                                                padding: 1vw 3vw;
+                                                top:10vw;
+                                                left:5vw;
+                                                border-radius:0.5vw;
+                                                background:seagreen;
+                                                color:#fff">
+                                                Open Register popup
+                                            </button>
+                                            <div class="box_svg">
+                                                <img src="media/slidevid_temp/overlay_box4.svg" onload="SVGInject(this)"
+                                                    class="fullWidth fullHeight" />
+                                            </div>
+                                            <div class="box_avatar box_video">
+                                                <div class="video-wrap">
+                                                    <img src="media/slidevid_temp/img_avatar4.jpg" alt="" id="preview"
+                                                        class="fullWidth">
+                                                    <img src="media/img_act/sound_off.svg" class="video-sound"
+                                                        id="off" />
+                                                    <img src="media/img_act/sound_on.svg" class="video-sound" id="on" />
+                                                    <img src="media/img_act/play.svg" class="video-sound" id="play" />
+                                                    <div type="video/mp4" id="video-injector">
+                                                        <video playsinline loop muted preload="none" class="fullWidth">
+                                                            <source src="media/slidevid_temp/vid_box4.webm"
+                                                                type="video/webm">
+                                                            <!-- <source src="media/slidevid_temp/vid_box4.mp4"
+                                                                type="video/mp4"> -->
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <div class="box">
+                                            <button class="js_popup_register popup-button" target="form2-popup" style="
+                                                width: 30vw;
+                                                padding: 1vw 3vw;
+                                                top:10vw;
+                                                left:5vw;
+                                                border-radius:0.5vw;
+                                                background:seagreen;
+                                                color:#fff">
+                                                Open Register popup
+                                            </button>
+                                            <div class="box_svg">
+                                                <img src="media/slidevid_temp/overlay_box5.svg" onload="SVGInject(this)"
+                                                    class="fullWidth fullHeight" />
+                                            </div>
+                                            <div class="box_avatar box_video">
+                                                <div class="video-wrap">
+                                                    <img src="media/slidevid_temp/img_avatar5.jpg" alt="" id="preview"
+                                                        class="fullWidth">
+                                                    <img src="media/img_act/sound_off.svg" class="video-sound"
+                                                        id="off" />
+                                                    <img src="media/img_act/sound_on.svg" class="video-sound" id="on" />
+                                                    <img src="media/img_act/play.svg" class="video-sound" id="play" />
+                                                    <div type="video/mp4" id="video-injector">
+                                                        <video playsinline loop muted preload="none" class="fullWidth">
+                                                            <source src="media/slidevid_temp/vid_box5.webm"
+                                                                type="video/webm">
+                                                            <source src="media/slidevid_temp/vid_box5.mp4"
+                                                                type="video/mp4">
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //Slide temp -->
+                        </div>
+
+                        <!-- Slide temp over-background -->
+                        <div class="slidertemp_overlaybg swiper-container">
+                            <ul class="lst swiper-wrapper">
+                                <li class="item swiper-slide">
+                                    <div class="bg_overlay"><img src="media/slidevid_temp/overlay_avatar1.svg"
+                                            onload="SVGInject(this)" class="fullWidth fullHeight" /> </div>
+                                </li>
+                                <li class="item swiper-slide">
+                                    <div class="bg_overlay"><img src="media/slidevid_temp/overlay_avatar2.svg"
+                                            onload="SVGInject(this)" class="fullWidth fullHeight" /></div>
+                                </li>
+                                <li class="item swiper-slide">
+                                    <div class="bg_overlay"><img src="media/slidevid_temp/overlay_avatar3.svg"
+                                            onload="SVGInject(this)" class="fullWidth fullHeight" /></div>
+                                </li>
+                                <li class="item swiper-slide">
+                                    <div class="bg_overlay"><img src="media/slidevid_temp/overlay_avatar4.svg"
+                                            onload="SVGInject(this)" class="fullWidth fullHeight" /></div>
+                                </li>
+                                <li class="item swiper-slide">
+                                    <div class="bg_overlay"><img src="media/slidevid_temp/overlay_avatar5.svg"
+                                            onload="SVGInject(this)" class="fullWidth fullHeight" /></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //Slide temp over-background -->
+
+                        <div class="slidertemp_bg_wrap">
+                            <!-- Slide temp background -->
+                            <div class="slidertemp_bg swiper-container">
+                                <ul class="lst swiper-wrapper">
+                                    <li class="item swiper-slide">
+                                        <div class="bg_avatar"><img src="media/slidevid_temp/img_avatar1.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <div class="bg_avatar"><img src="media/slidevid_temp/img_avatar2.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <div class="bg_avatar"><img src="media/slidevid_temp/img_avatar3.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <div class="bg_avatar"><img src="media/slidevid_temp/img_avatar4.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <div class="bg_avatar"><img src="media/slidevid_temp/img_avatar5.jpg" alt="">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //Slide temp background -->
+                        </div>
+                    </div>
+                    <!-- end slide video -->
+
+
+                    <!-- single image -->
+                    <div class="component">
+                        <button class="js_popup_register popup-button" target="form2-popup" style="
+                                width: 30vw;
+                                padding: 1vw 3vw;
+                                top:10vw;
+                                left:5vw;
+                                border-radius:0.5vw;
+                                background:seagreen;
+                                color:#fff">
+                            Open Register popup
+                        </button>
+                        <img src="media/svg_single/svg_single1.svg" onload="SVGInject(this)">
+                    </div>
+                    <!-- end single image -->
+
+                    <!-- single video -->
+                    <div class="single-video-wrap video-wrap component">
+                        <img src="media/vid_single/vid_single2.jpg" id="single-preview" class="fullWidth" />
+                        <img src="media/img_act/sound_off.svg" class="video-sound" id="off" />
+                        <img src="media/img_act/sound_on.svg" class="video-sound" id="on" />
+                        <img src="media/img_act/play.svg" class="video-sound" id="play" />
+                        <div type="video/mp4" id="video-injector">
+                            <video playsinline loop muted preload="none" class="fullWidth"
+                                poster="media/vid_single/vid_single2.jpg">
+                                <source src="media/vid_single/vid_single2.webm" type="video/webm">
+                                <source src="media/vid_single/vid_single2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- end single video -->
+
+                    <!-- single image -->
+                    <div class="component">
+                        <button class="js_popup_register popup-button" target="form4-popup" style="
+                                width: 30vw;
+                                padding: 1vw 3vw;
+                                top:10vw;
+                                left:5vw;
+                                border-radius:0.5vw;
+                                background:seagreen;
+                                color:#fff">
+                            Open Register popup
+                        </button>
+                        <img src="media/svg_single/svg_single2.svg" onload="SVGInject(this)">
+                    </div>
+                    <!-- end single image -->
+
+                    <!-- text -->
+                    <div class="component">
+                        <button class="js_popup_register popup-button" target="form1-popup" style="
+                                width: 30vw;
+                                padding: 1vw 3vw;
+                                top:10vw;
+                                left:5vw;
+                                border-radius:0.5vw;
+                                background:seagreen;
+                                color:#fff">
+                            Open Register popup
+                        </button>
+                        <img src="media/svg_single/svg_single3.svg" onload="SVGInject(this)">
+                    </div>
+                    <!-- end text -->
+
+                    <!-- single image -->
+                    <div class="single-img-with-cover component">
+                        <button class="js_popup_register popup-button" target="form2-popup" style="
+                                width: 30vw;
+                                padding: 1vw 3vw;
+                                top:10vw;
+                                left:5vw;
+                                border-radius:0.5vw;
+                                background:seagreen;
+                                color:#fff">
+                            Open Register popup
+                        </button>
+                        <img class="fullWidth" src="media/img_single/img_preview3.jpg" id="preview" />
+                        <div class="single-image" src="media/img_single/img_single3.jpg">
+                            <img src="" alt="" class="fullWidth fullHeight">
+                        </div>
+                    </div>
+                    <!-- end single image -->
+
+                    <!-- Slide image -->
+                    <div class="slideImg component" id="slideImg1">
+                        <div class="slideImage_wrap">
+                            <!-- Slide temp -->
+                            <div class="slideImage swiper-container">
+                                <ul class="lst swiper-wrapper">
+                                    <li class="item swiper-slide">
+                                        <button class="js_popup_register popup-button" target="form4-popup" style="
+                                            width: 30vw;
+                                            padding: 1vw 3vw;
+                                            top:10vw;
+                                            left:5vw;
+                                            border-radius:0.5vw;
+                                            background:seagreen;
+                                            color:#fff">
+                                            Open Register popup1
+                                        </button>
+                                        <div class="box">
+                                            <div class="box_svg">
+                                                <img src="media/slideimg_temp/overlay_box1.svg" onload="SVGInject(this)"
+                                                    class="fullWidth fullHeight" />
+                                            </div>
+                                            <div class="box_avatar" imgurl="media/slideimg_temp/img_avatar1.jpg">
+                                                <img src="" alt="" class="fullWidth" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <button class="js_popup_register popup-button" target="form4-popup" style="
+                                            width: 30vw;
+                                            padding: 1vw 3vw;
+                                            top:10vw;
+                                            left:5vw;
+                                            border-radius:0.5vw;
+                                            background:seagreen;
+                                            color:#fff">
+                                            Open Register popup2
+                                        </button>
+                                        <div class="box">
+                                            <div class="box_svg">
+                                                <img src="media/slideimg_temp/overlay_box2.svg" onload="SVGInject(this)"
+                                                    class="fullWidth fullHeight" />
+                                            </div>
+                                            <div class="box_avatar" imgurl="media/slideimg_temp/img_avatar2.jpg">
+                                                <img src="" alt="" class="fullWidth" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <button class="js_popup_register popup-button" target="form4-popup" style="
+                                            width: 30vw;
+                                            padding: 1vw 3vw;
+                                            top:10vw;
+                                            left:5vw;
+                                            border-radius:0.5vw;
+                                            background:seagreen;
+                                            color:#fff">
+                                            Open Register popup2
+                                        </button>
+                                        <div class="box">
+                                            <div class="box_svg">
+                                                <img src="media/slideimg_temp/overlay_box3.svg" onload="SVGInject(this)"
+                                                    class="fullWidth fullHeight" />
+                                            </div>
+                                            <div class="box_avatar" imgurl="media/slideimg_temp/img_avatar3.jpg">
+                                                <img src="" alt="" class="fullWidth" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <button class="js_popup_register popup-button" target="form4-popup" style="
+                                            width: 30vw;
+                                            padding: 1vw 3vw;
+                                            top:10vw;
+                                            left:5vw;
+                                            border-radius:0.5vw;
+                                            background:seagreen;
+                                            color:#fff">
+                                            Open Register popup2
+                                        </button>
+                                        <div class="box">
+                                            <div class="box_svg">
+                                                <img src="media/slideimg_temp/overlay_box4.svg" onload="SVGInject(this)"
+                                                    class="fullWidth fullHeight" />
+                                            </div>
+                                            <div class="box_avatar" imgurl="media/slideimg_temp/img_avatar4.jpg">
+                                                <img src="" alt="" class="fullWidth" />
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <button class="js_popup_register popup-button" target="form4-popup" style="
+                                            width: 30vw;
+                                            padding: 1vw 3vw;
+                                            top:10vw;
+                                            left:5vw;
+                                            border-radius:0.5vw;
+                                            background:seagreen;
+                                            color:#fff">
+                                            Open Register popup2
+                                        </button>
+                                        <div class="box">
+                                            <div class="box_svg">
+                                                <img src="media/slideimg_temp/overlay_box5.svg" onload="SVGInject(this)"
+                                                    class="fullWidth fullHeight" />
+                                            </div>
+                                            <div class="box_avatar" imgurl="media/slideimg_temp/img_avatar5.jpg">
+                                                <img src="" alt="" class="fullWidth" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //Slide temp -->
+                        </div>
+
+                        <!-- Slide temp over-background -->
+                        <div class="slideImage_overlaybg swiper-container">
+                            <ul class="lst swiper-wrapper">
+                                <li class="item swiper-slide">
+                                    <div class="bg_overlay">
+                                        <img src="media/slideimg_temp/overlay_avatar1.svg" onload="SVGInject(this)"
+                                            class="fullWidth fullHeight" />
+                                    </div>
+                                </li>
+                                <li class="item swiper-slide">
+                                    <div class="bg_overlay">
+                                        <img src="media/slideimg_temp/overlay_avatar2.svg" onload="SVGInject(this)"
+                                            class="fullWidth fullHeight" />
+                                    </div>
+                                </li>
+                                <li class="item swiper-slide">
+                                    <div class="bg_overlay">
+                                        <img src="media/slideimg_temp/overlay_avatar3.svg" onload="SVGInject(this)"
+                                            class="fullWidth fullHeight" />
+                                    </div>
+                                </li>
+                                <li class="item swiper-slide">
+                                    <div class="bg_overlay">
+                                        <img src="media/slideimg_temp/overlay_avatar4.svg" onload="SVGInject(this)"
+                                            class="fullWidth fullHeight" />
+                                    </div>
+                                </li>
+                                <li class="item swiper-slide">
+                                    <div class="bg_overlay">
+                                        <img src="media/slideimg_temp/overlay_avatar5.svg" onload="SVGInject(this)"
+                                            class="fullWidth fullHeight" />
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //Slide temp over-background -->
+
+                        <div class="slideImage_bg_wrap">
+                            <!-- Slide temp background -->
+                            <div class="slideImage_bg swiper-container">
+                                <ul class="lst swiper-wrapper">
+                                    <li class="item swiper-slide">
+                                        <div class="bg_avatar" imgurl="media/slideimg_temp/img_avatar1.jpg">
+                                            <img src="" alt="" class="fullWidth" />
+                                        </div>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <div class="bg_avatar" imgurl="media/slideimg_temp/img_avatar2.jpg">
+                                            <img src="" alt="" class="fullWidth" />
+                                        </div>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <div class="bg_avatar" imgurl="media/slideimg_temp/img_avatar3.jpg">
+                                            <img src="" alt="" class="fullWidth" />
+                                        </div>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <div class="bg_avatar" imgurl="media/slideimg_temp/img_avatar4.jpg">
+                                            <img src="" alt="" class="fullWidth" />
+                                        </div>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <div class="bg_avatar" imgurl="media/slideimg_temp/img_avatar5.jpg">
+                                            <img src="" alt="" class="fullWidth" />
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //Slide temp background -->
+                        </div>
+                    </div>
+                    <!-- end Slide image-->
+
+                    <!-- single image with cover -->
+                    <div class="single-img-with-cover component">
+                        <button class="js_popup_register popup-button" target="form2-popup" style="
+                                width: 30vw;
+                                padding: 1vw 3vw;
+                                top:10vw;
+                                left:5vw;
+                                border-radius:0.5vw;
+                                background:seagreen;
+                                color:#fff">
+                            Open Register popup
+                        </button>
+                        <img class="fullWidth" src="media/img_single/img_preview3.jpg" id="preview" />
+                        <div class="single-image" src="media/img_single/img_single3.jpg">
+                            <img src="" alt="" class="fullWidth fullHeight">
+                        </div>
+                        <div class="bg"><img src="media/img_single/img_overlay3.svg" alt="cover"
+                                onload="SVGInject(this)" class="fullWidth fullHeight"></div>
+                    </div>
+                    <!-- end single image with cover -->
+
+                    <!-- single video with cover-->
+                    <div class="single-video-wrap video-wrap single-video-with-cover component">
+                        <button class="js_popup_register popup-button" target="form4-popup" style="
+                                width: 30vw;
+                                padding: 1vw 3vw;
+                                top:10vw;
+                                left:5vw;
+                                border-radius:0.5vw;
+                                background:seagreen;
+                                color:#fff;
+                                display: none">
+                            Open Register popup
+                        </button>
+                        <div class="bg"><img src="media/vid_single/vid_overlay1.svg" alt="cover"
+                                onload="SVGInject(this)"></div>
+                        <img src="media/vid_single/vid_single1.jpg" id="single-preview" class="fullWidth" />
+                        <img src="media/img_act/sound_off.svg" class="video-sound" id="off" />
+                        <img src="media/img_act/sound_on.svg" class="video-sound" id="on" />
+                        <img src="media/img_act/play.svg" class="video-sound" id="play" />
+                        <div id="video-injector">
+                            <video playsinline loop muted preload="none" class="fullWidth"
+                                poster="media/vid_single/vid_single1.jpg">
+                                <source src="media/vid_single/vid_single1.webm" type="video/webm">
+                                <!-- <source src="media/vid_single/vid_single1.mp4" type="video/mp4"> -->
+                            </video>
+                        </div>
+                    </div>
+                    <!-- end single video with cover -->
+
+                    <!-- //Content -->
+                </div>
+        </main>
+        <!-- //Container -->
+        <!-- Menu -->
+        <header id="header" role="banner">
+            <button class="btn btn_menu js_btn_menu"><span class="sr_only">Menu</span></button>
+            <img src="media/menu/menu_bg.svg" alt="">
+        </header>
+
+        <nav id="nav" role="navigation">
+            <div class="nav_ct">
+                <ul class="lst">
+                    <li><a href="#none" class="btn link_home js_link_home"><span class="sr_only">Go to
+                                Homepage</span></a></li>
+                    <li><a href="#none" class="btn link_action js_link_action"><span class="sr_only">Go to
+                                Action</span></a></li>
+                    <li><a href="#none" class="btn link_aboutus js_link_aboutus"><span class="sr_only">Go to
+                                Aboutus</span></a></li>
+                    <li><a href="#none" class="btn link_faq js_link_faq"><span class="sr_only">Go to FAQ</span></a></li>
+                    <li><a href="#none" class="btn link_account"><span class="sr_only">Go to Account</span></a></li>
+                    <li><a href="#none" class="btn link_register"><span class="sr_only">Open Register popup</span></a>
+                    </li>
+                    <li><a href="#none" class="btn link_blog"><span class="sr_only">Go to Blog</span></a></li>
+                </ul>
+            </div>
+            <div class="nav_bg">
+                <img src="media/menu/menu_nav.svg" alt="" onload="SVGInject(this)" class="fullWidth fullHeight" />
+            </div>
+        </nav>
+        <!-- //Menu -->
+    </div>
+
+    <!-- Script -->
+    <script src="js/libs/main.js"></script>
+    <script src="js/pagetemp/main.js"></script>
+    <script src="js/libs/slideswiper.min.js"></script>
+    <script src="/form/js/form1/libs/slick.min.js"></script>
+    <script src="/form/js/main.js"></script>
+    <script src="js/apps/menu.nav.js"></script>
+    <script src="js/pagetemp/slideVideo.js"></script>
+    <script src="js/pagetemp/slideImage.js"></script>
+    <script src="js/pagetemp/singleVideo.js"></script>
+    <script src="js/pagetemp/singleImage.js"></script>
+</body>
+
+</html>

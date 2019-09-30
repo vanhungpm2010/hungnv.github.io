@@ -1,0 +1,31 @@
+/* SF fonts */
+@font-face {
+    font-family: 'SF Compact Display';
+    src: url('webfont/SFCompactDisplay-Semibold.woff2') format('woff2'),
+         rl('webfont/SFCompactDisplay-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF Compact Display';
+    src: url('webfont/SFCompactDisplay-Medium.woff2') format('woff2'),
+         url('webfont/SFCompactDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF Compact Display';
+    src: url('webfont/SFCompactDisplay-Regular.woff2') format('woff2'),
+         url('webfont/SFCompactDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Georgia font */
+@font-face {
+    font-family: 'Georgia';
+    src: url('webfont/Georgia-Italic.woff2') format('woff2'),
+         url('webfont/Georgia-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}

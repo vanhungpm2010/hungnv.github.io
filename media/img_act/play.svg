@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>play</title>
+    <desc>Created with Sketch.</desc>
+    <g id="mediatemp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="vid_single1" transform="translate(-253.000000, -416.000000)">
+            <g id="play" transform="translate(253.000000, 416.000000)">
+                <rect id="Rectangle" fill="#000000" x="0" y="0" width="40" height="40"></rect>
+                <path d="M27.2418301,18.9547175 L13.2984749,11.1115803 C13.0283224,10.9599463 12.6989107,10.9634321 12.432244,11.1185519 C12.1638344,11.2754147 12,11.5612535 12,11.8714931 L12,27.5577676 C12,27.8680073 12.1638344,28.1538461 12.432244,28.3107088 C12.5681917,28.3891402 12.7198257,28.4292273 12.8714597,28.4292273 C13.0178649,28.4292273 13.1660131,28.392626 13.2984749,28.3176805 L27.2418301,20.4745432 C27.5154684,20.3194234 27.6862745,20.0300988 27.6862745,19.7146304 C27.6862745,19.399162 27.5154684,19.1098373 27.2418301,18.9547175 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,37 @@
+
+<svg width="100%" height="auto" viewBox="0 0 320 568" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <text id="text-1" font-family="Georgia-Italic, Georgia" font-size="14" font-style="italic" font-weight="normal" line-spacing="19" letter-spacing="-0.14" fill="#556279">
+            <tspan x="30" y="429.744879">nunc aliquet bibendum enim. In massa </tspan>
+            <tspan x="30" y="448.744879">tempor nec feugiat. Nunc aliquet bibendi </tspan>
+            <tspan x="30" y="467.744879">enim facilisis gravida.</tspan>
+        </text>
+        <filter x="-2.7%" y="-8.8%" width="105.4%" height="124.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.196078431   0 0 0 0 0.77254902   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="mediatemp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="svgcode1">
+            <g id="Group">
+                <rect id="svgcode" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="320" height="568"></rect>
+                <text id="Slide1" font-family="SFCompactDisplay-Semibold, SF Compact Display" font-size="24" font-weight="500" letter-spacing="-1.67647" fill="#343D51">
+                    <tspan x="30" y="345.386406">Slide1</tspan>
+                </text>
+                <text id="Lorem-ipsum-dolor-si" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="15" font-weight="normal" line-spacing="20" letter-spacing="-0.15" fill="#343D51">
+                    <tspan x="30" y="378.916201">Lorem ipsum dolor sit amet, consectetur </tspan>
+                    <tspan x="30" y="398.916201">adipiscing elit, sed do eiusmod tempor</tspan>
+                </text>
+                <text id="Lorem-ipsum-dolor-si" font-family="SFCompactDisplay-Medium, SF Compact Display" font-size="15" font-weight="400" line-spacing="20" letter-spacing="-0.15" fill="#343D51">
+                    <tspan x="30" y="503.728119">Lorem ipsum dolor sit amet, consecte </tspan>
+                    <tspan x="30" y="523.728119">adipiscing elit, sed do ei</tspan>
+                </text>
+                <g id="nunc-aliquet-bibendu" fill="#556279" fill-opacity="1">
+                    <use filter="url(#filter-2)" xlink:href="#text-1"></use>
+                    <use xlink:href="#text-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
