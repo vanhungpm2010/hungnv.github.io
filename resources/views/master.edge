@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    @section('header')
+        @include('header')
+    @endsection
+</head>
+<!-- end::Head -->
+
+<!-- begin::Body -->
+
+<body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--solid kt-aside--enabled kt-aside--fixed kt-aside--minimize kt-page--loading">
+    
+    <!-- begin:: Page -->
+
+    @section('aside-menu-mobile')
+        @include('aside-menu-mobile')
+    @endsection
+    
+    <div class="kt-grid kt-grid--hor kt-grid--root">
+        <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+            <!-- begin:: Aside -->
+            <button class="kt-aside-close " id="kt_aside_close_btn"><i class="la la-close"></i></button>
+
+            <div class="kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop" id="kt_aside">
+                <!-- begin:: Aside Menu -->
+                @section('aside-menu')
+                    @include('aside-menu')
+                @endsection
+                <!-- end:: Aside Menu -->
+
+            </div>
+            <!-- end:: Aside -->
+
+            <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper" style="margin-top: 20px">
+                <!-- begin:: Header -->
+                @section('header-menu')
+                    @include('header-menu')
+                @endsection
+                <!-- end:: Header -->
+
+                <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
+                    <!-- begin:: Search -->
+                    <!-- end:: Search -->
+
+                    <!-- begin:: Content -->
+                    @!section('content')
+                    <!-- end:: Content -->
+
+                    <!-- begin:: Footer -->
+                    @section('footer-page')
+                        @include('footer-page')
+                    @endsection
+                    <!-- end:: Footer -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Page -->
+
+    @section('footer')
+        @include('footer')
+    @endsection
+</body>
+
+<!-- end::Body -->
+
+</html>
